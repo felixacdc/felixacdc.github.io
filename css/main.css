@@ -86,7 +86,7 @@ body {
 .medium {
   margin-top: 0px;
   color: #FFF;
-  padding: 30px;
+  padding: 50px;
 }
 #aboutme {
   background-color: #2ecc71;
@@ -94,11 +94,15 @@ body {
 #aboutme p {
   text-align: justify;
 }
-#skills {
+.skills {
   background-color: #eeeeee;
   color: #34495e;
 }
+.skills h2 {
+  font-size: 3em;
+}
 /* ================== Fin Acerca De ==================*/
+/* ================== Medios ==================*/
 #medium01 {
   background: #242a33 url(../img/medium01.jpg) no-repeat 50% 50%;
   background-size: cover;
@@ -133,3 +137,33 @@ body {
   color: #428bca;
   font-size: 2em;
 }
+/* ================== Fin Medios ==================*/
+/* ================== Servicios ==================*/
+.optionServices {
+  margin-top: 30px;
+}
+.service {
+  text-align: center;
+  padding: 20px 10px;
+  color: white;
+  border-radius: 10px;
+}
+.service > i {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  padding: 30px;
+  color: white;
+}
+.service > ul {
+  text-align: left;
+}
+#serviceOne {
+  background-color: #34495e;
+}
+#serviceTwo {
+  background-color: #2ecc71;
+}
+#serviceThree {
+  background-color: #e74c3c;
+}
+/* ================== Fin Servicios ==================*/
