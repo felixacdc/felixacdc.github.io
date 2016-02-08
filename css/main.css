@@ -5,6 +5,7 @@
 }
 body {
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.6em;
 }
 /* ================== Header ==================*/
 /* ================== Navigation ==================*/
@@ -73,10 +74,24 @@ body {
 .content > h1 {
   font-size: 3.2em;
 }
-.content > p {
-  font-size: 1.2em;
-}
 .content > p > span {
   color: #2ecc71;
 }
 /* ================== Fin Header ==================*/
+/* ================== Acerca De ==================*/
+.medium {
+  margin-top: 0px;
+  color: #FFF;
+  padding: 30px;
+}
+#aboutme {
+  background-color: #2ecc71;
+}
+#aboutme p {
+  text-align: justify;
+}
+#skills {
+  background-color: #f5f5f5;
+  color: #34495e;
+}
+/* ================== Fin Acerca De ==================*/
