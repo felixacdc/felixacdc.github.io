@@ -94,11 +94,11 @@ body {
 #aboutme p {
   text-align: justify;
 }
-.skills {
+.sectionContent {
   background-color: #eeeeee;
   color: #34495e;
 }
-.skills h2 {
+.sectionContent h2 {
   font-size: 3em;
 }
 /* ================== Fin Acerca De ==================*/
@@ -144,9 +144,10 @@ body {
 }
 .service {
   text-align: center;
-  padding: 20px 10px;
+  padding: 25px 10px;
   color: white;
   border-radius: 10px;
+  margin-bottom: 30px;
 }
 .service > i {
   background-color: rgba(0, 0, 0, 0.4);
