@@ -88,31 +88,7 @@ body {
   color: #FFF;
   padding: 50px;
 }
-#aboutme {
-  background-color: #2ecc71;
-}
-#aboutme p {
-  text-align: justify;
-}
-.sectionContent {
-  background-color: #eeeeee;
-  color: #34495e;
-}
-.sectionContent h2 {
-  font-size: 3em;
-}
-/* ================== Fin Acerca De ==================*/
-/* ================== Medios ==================*/
-#medium01 {
-  background: #242a33 url(../img/medium01.jpg) no-repeat 50% 50%;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  padding: 0px;
-  text-align: center;
-}
-#medium01 .dark {
+.medium .dark {
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
   /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(17%, rgba(0, 0, 0, 0.73)), color-stop(35%, rgba(0, 0, 0, 0.66)), color-stop(62%, rgba(0, 0, 0, 0.55)), color-stop(100%, rgba(0, 0, 0, 0.4)));
@@ -133,9 +109,42 @@ body {
   padding: 100px 0 100px;
   font-family: 'Lobster', cursive;
 }
-#medium01 .dark p {
+.medium .dark p {
   color: #428bca;
   font-size: 2em;
+}
+#aboutme {
+  background-color: #2ecc71;
+}
+#aboutme p {
+  text-align: justify;
+}
+.sectionContent {
+  background-color: #eeeeee;
+  color: #34495e;
+}
+.sectionContent h2 {
+  font-size: 3em;
+}
+/* ================== Fin Acerca De ==================*/
+/* ================== Medios ==================*/
+#medium01 {
+  background: #242a33 url('../img/medium01.jpg') no-repeat 50% 50%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 0px;
+  text-align: center;
+}
+#medium02 {
+  background: #242a33 url('../img/medium02.jpg') no-repeat 50% 50%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 0px;
+  text-align: center;
 }
 /* ================== Fin Medios ==================*/
 /* ================== Servicios ==================*/
@@ -156,7 +165,11 @@ body {
   color: white;
 }
 .service > ul {
-  text-align: left;
+  text-align: center;
+  list-style-type: none;
+}
+.service > ul > li {
+  margin-left: -40px;
 }
 #serviceOne {
   background-color: #34495e;
@@ -168,3 +181,52 @@ body {
   background-color: #e74c3c;
 }
 /* ================== Fin Servicios ==================*/
+/* ================== Contacto ==================*/
+#contact {
+  background-color: #e74c3c;
+  color: white;
+}
+#contact .row i {
+  line-height: 15px;
+  font-size: 1.6em;
+  margin-right: 6px;
+}
+#contact .row .fa-mobile {
+  font-size: 2em;
+  margin-top: 4px;
+  margin-left: 5px;
+  margin-right: 9px;
+}
+#contact .row .fa-envelope-o {
+  font-size: 1.4em;
+}
+#contact .row h3 {
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  border-bottom: #FFF solid 2px;
+}
+#contact .row a {
+  color: white;
+  margin: 20px;
+}
+#contact .row .inWeb {
+  font-size: 3em;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+/* ================== Fin Contacto ==================*/
+/* ================== Footer ==================*/
+footer {
+  background: #34495e;
+  padding: 30px 0px;
+}
+footer p {
+  text-align: center;
+  color: white;
+  margin: 0px;
+}
+/* ================== Fin Footer ==================*/

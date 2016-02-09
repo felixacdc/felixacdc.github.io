@@ -106,6 +106,26 @@ body{
     margin-top: 0px;
     color: #FFF;
     padding: 50px;
+    
+    .dark{
+        background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
+        background-attachment: fixed;
+        width: 100%;
+        height: 100%;
+        padding: 100px 0 100px;
+        font-family: 'Lobster', cursive;
+
+        p {
+            color: #428bca;
+            font-size: 2em;
+        }
+    }
 }
 
 #aboutme{
@@ -129,34 +149,23 @@ body{
 /* ================== Fin Acerca De ==================*/
 
 /* ================== Medios ==================*/
-#medium01{
-    background: #242a33 url(../img/medium01.jpg) no-repeat 50% 50%;
+
+.fondosMedium(@url){
+    background: #242a33 url(@url) no-repeat 50% 50%;
     background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
     padding: 0px;
-    text-align: center;
-    
-    .dark{
-        background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
-        background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
-        background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
-        background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
-        background-attachment: fixed;
-        width: 100%;
-        height: 100%;
-        padding: 100px 0 100px;
-        font-family: 'Lobster', cursive;
+    text-align: center; 
+}
 
-        p {
-            color: #428bca;
-            font-size: 2em;
-        }
-    }
+#medium01{
+    .fondosMedium('../img/medium01.jpg');
+}
+
+#medium02{
+    .fondosMedium('../img/medium02.jpg');
 }
 
 /* ================== Fin Medios ==================*/
@@ -182,7 +191,12 @@ body{
     }
     
     >ul{
-        text-align: left;
+        text-align: center;
+        list-style-type: none;
+        
+        >li{
+            margin-left: -40px;
+        }
     }
 }
 
@@ -199,3 +213,69 @@ body{
 }
 
 /* ================== Fin Servicios ==================*/
+
+/* ================== Contacto ==================*/
+
+#contact{
+    background-color: @fourth_color;
+    color: white;
+    
+    .row{
+        
+        i{
+            line-height: 15px;
+            font-size: 1.6em;
+            margin-right: 6px;
+        }
+        
+        .fa-mobile{
+            font-size: 2em;
+            margin-top: 4px;
+            margin-left: 5px;
+            margin-right: 9px;
+        }
+
+        .fa-envelope-o{
+            font-size: 1.4em;
+        }
+
+        h3{
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            border-bottom: #FFF solid 2px;
+        }
+        
+        a{
+            color: white;
+            margin: 20px;
+        }
+        
+        .inWeb{
+            font-size: 3em;
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 50%;
+        }
+    }
+        
+}
+
+/* ================== Fin Contacto ==================*/
+
+/* ================== Footer ==================*/
+
+footer{
+    background: @primary_color;
+    padding: 30px 0px;
+    
+    p{
+        text-align: center;
+        color: white;
+        margin: 0px;
+    }
+}
+
+/* ================== Fin Footer ==================*/
