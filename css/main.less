@@ -25,6 +25,26 @@ body{
     background-color: @primary_color;
     border-color: @primary_color;
     
+    .navbar-nav{
+        >li {
+            &.active {
+                >a {
+                    background: rgba(0, 0, 0, 0);
+                    color: @second_color !important;
+                    margin-top: -5px;
+                }
+                
+                >a:hover {
+                  background: rgba(0, 0, 0, 0);
+                }
+                
+                >a:focus {
+                  background: rgba(0, 0, 0, 0);
+                }
+            }
+        }
+    }
+    
     .navbar-nav > li > a {
         text-transform: uppercase;
         color: #FFF;
@@ -33,10 +53,13 @@ body{
         transition: all 0.2s;
     }
     
-    .navbar-nav > li > a:hover,
-    .navbar-nav > li > a:focus{
+    .navbar-nav > li > a:hover{
         color: @second_color !important;
         margin-top: -5px;
+    }
+    
+    .navbar-nav > li > a:focus{
+        color: white;
     }
     
     .navbar-brand > i {
@@ -79,6 +102,25 @@ body{
         height: 700px;
         background-attachment: fixed;
     }
+    
+    a.fa.fa-angle-down {
+        width: 50px;
+        padding: 10px 15px;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        font-size: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 150px;
+        transition: all 0.5s;
+    }
+    
+    a.fa.fa-angle-down:hover{
+        background: @primary_color;
+        color: #ffffff;
+        border: 2px solid @primary_color;
+    }
 }
 
 
@@ -86,6 +128,7 @@ body{
 .content{
     position: relative;
     padding: 20% 60px 0;
+    text-align: center;
     
     >h1{
         font-size: 3.2em;
@@ -219,6 +262,7 @@ body{
 #contact{
     background-color: @fourth_color;
     color: white;
+    padding-bottom: 90px;
     
     .row{
         
@@ -271,6 +315,12 @@ footer{
     background: @primary_color;
     padding: 30px 0px;
     
+    img{
+        width: 115px;
+        height: 115px;
+        margin-bottom: 20px;
+    }
+    
     p{
         text-align: center;
         color: white;
@@ -300,6 +350,10 @@ footer{
 
 .delay-3{
 	.delay(1.8s);
+}
+
+.delay-4{
+	.delay(2.1s);
 }
 
 .homeloader{

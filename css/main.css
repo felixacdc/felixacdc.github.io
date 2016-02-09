@@ -17,6 +17,17 @@ body {
   background-color: #34495e;
   border-color: #34495e;
 }
+.navbar-default .navbar-nav > li.active > a {
+  background: rgba(0, 0, 0, 0);
+  color: #2ecc71 !important;
+  margin-top: -5px;
+}
+.navbar-default .navbar-nav > li.active > a:hover {
+  background: rgba(0, 0, 0, 0);
+}
+.navbar-default .navbar-nav > li.active > a:focus {
+  background: rgba(0, 0, 0, 0);
+}
 .navbar-default .navbar-nav > li > a {
   text-transform: uppercase;
   color: #FFF;
@@ -24,10 +35,12 @@ body {
   letter-spacing: 1px;
   transition: all 0.2s;
 }
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:hover {
   color: #2ecc71 !important;
   margin-top: -5px;
+}
+.navbar-default .navbar-nav > li > a:focus {
+  color: white;
 }
 .navbar-default .navbar-brand > i {
   color: #FFF;
@@ -71,9 +84,27 @@ body {
   height: 700px;
   background-attachment: fixed;
 }
+#info-home a.fa.fa-angle-down {
+  width: 50px;
+  padding: 10px 15px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  font-size: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  transition: all 0.5s;
+}
+#info-home a.fa.fa-angle-down:hover {
+  background: #34495e;
+  color: #ffffff;
+  border: 2px solid #34495e;
+}
 .content {
   position: relative;
   padding: 20% 60px 0;
+  text-align: center;
 }
 .content > h1 {
   font-size: 3.2em;
@@ -185,6 +216,7 @@ body {
 #contact {
   background-color: #e74c3c;
   color: white;
+  padding-bottom: 90px;
 }
 #contact .row i {
   line-height: 15px;
@@ -224,6 +256,11 @@ footer {
   background: #34495e;
   padding: 30px 0px;
 }
+footer img {
+  width: 115px;
+  height: 115px;
+  margin-bottom: 20px;
+}
 footer p {
   text-align: center;
   color: white;
@@ -251,6 +288,13 @@ footer p {
   -ms-animation-delay: 1.8s;
   -o-animation-delay: 1.8s;
   animation-delay: 1.8s;
+}
+.delay-4 {
+  -webkit-animation-delay: 2.1s;
+  -moz-animation-delay: 2.1s;
+  -ms-animation-delay: 2.1s;
+  -o-animation-delay: 2.1s;
+  animation-delay: 2.1s;
 }
 .homeloader {
   display: none;
