@@ -11,8 +11,11 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/introLoader.css">
 </head>
 <body id="home">
+  
+    <div id="element" class="introLoading"></div>
    
     <header>
        
@@ -43,8 +46,8 @@
         <div id="info-home">
             <div class="overlay">
                 <div class="content">
-                    <h1>Pablo Félix Méndez</h1>
-                    <p>Diversos servicios de instalación, mantenimiento de software y <span>Desarrollo Web.</span></p>
+                    <h1 id="homeloader01" class="homeloader animated delay-1">Pablo Félix Méndez</h1>
+                    <p id="homeloader02" class="homeloader animated delay-2">Diversos servicios de instalación, mantenimiento de software y <span id="homeloader03" class="homeloader animated delay-3">Desarrollo Web.</span></p>
                 </div>
             </div>
         </div>
@@ -208,5 +211,9 @@
     
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/spin.min.js"></script>
+    <script type="text/javascript" src="js/jquery.introLoader.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

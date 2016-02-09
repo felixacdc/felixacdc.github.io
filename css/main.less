@@ -279,3 +279,31 @@ footer{
 }
 
 /* ================== Fin Footer ==================*/
+
+/* ================== Animaciones ==================*/
+
+.delay(@time){
+    -webkit-animation-delay: @time;
+    -moz-animation-delay: @time;
+    -ms-animation-delay: @time;
+	-o-animation-delay: @time;
+	animation-delay: @time;
+}
+
+.delay-1{
+    .delay(0.3s);
+}
+
+.delay-2{
+	.delay(0.8s);
+}
+
+.delay-3{
+	.delay(1.8s);
+}
+
+.homeloader{
+    display: none;
+}
+
+/* ================== Fin Animaciones ==================*/
