@@ -13,6 +13,26 @@ font-family: Lobster;
 src: url(fonts/Lobster-Regular.ttf);
 }
 
+
+.delay(@time){
+    -webkit-animation-delay: @time;
+    -moz-animation-delay: @time;
+    -ms-animation-delay: @time;
+	-o-animation-delay: @time;
+	animation-delay: @time;
+}
+
+
+.fondosMedium(@url){
+    background: #242a33 url(@url) no-repeat 50% 50%;
+    background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+    padding: 0px;
+    text-align: center; 
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6em;
@@ -196,16 +216,6 @@ body{
 
 /* ================== Medios ==================*/
 
-.fondosMedium(@url){
-    background: #242a33 url(@url) no-repeat 50% 50%;
-    background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-    padding: 0px;
-    text-align: center; 
-}
-
 #medium01{
     .fondosMedium('../img/medium01.jpg');
 }
@@ -247,6 +257,12 @@ body{
             margin-left: -40px;
         }
     }
+    
+    &:hover{
+        -webkit-animation-duration:1s;animation-duration:1s;
+        -webkit-animation-fill-mode:both;animation-fill-mode:both;
+        -webkit-animation-name:pulse;animation-name:pulse;
+    } 
 }
 
 #serviceOne{
@@ -309,6 +325,13 @@ body{
             text-align: center;
             background-color: rgba(0, 0, 0, 0.4);
             border-radius: 50%;
+            transition: all 1s;
+            
+            &:hover{
+                background-color: white;
+                color: @fourth_color;
+            }
+            
         }
     }
         
@@ -338,14 +361,6 @@ footer{
 /* ================== Fin Footer ==================*/
 
 /* ================== Animaciones ==================*/
-
-.delay(@time){
-    -webkit-animation-delay: @time;
-    -moz-animation-delay: @time;
-    -ms-animation-delay: @time;
-	-o-animation-delay: @time;
-	animation-delay: @time;
-}
 
 .delay-1{
     .delay(0.3s);

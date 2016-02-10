@@ -208,6 +208,14 @@ body {
 .service > ul > li {
   margin-left: -40px;
 }
+.service:hover {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
 #serviceOne {
   background-color: #34495e;
 }
@@ -256,6 +264,11 @@ body {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 50%;
+  transition: all 1s;
+}
+#contact .row .inWeb:hover {
+  background-color: white;
+  color: #e74c3c;
 }
 /* ================== Fin Contacto ==================*/
 /* ================== Footer ==================*/
