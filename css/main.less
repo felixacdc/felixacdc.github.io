@@ -113,7 +113,9 @@ body{
         margin-left: auto;
         margin-right: auto;
         margin-top: 150px;
-        transition: all 0.5s;
+        transition: background 0.5s;
+        transition: color 0.5s;
+        transition: border 0.5s;
     }
     
     a.fa.fa-angle-down:hover{
@@ -148,7 +150,8 @@ body{
 .medium{
     margin-top: 0px;
     color: #FFF;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     
     .dark{
         background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
@@ -185,7 +188,7 @@ body{
     color: @primary_color;
     
     h2{
-        font-size: 3em;
+        font-size: 2.8em;
     }
 }
 
@@ -229,7 +232,10 @@ body{
     >i{
         background-color: rgba(0, 0, 0, 0.4);
         border-radius: 50%;
-        padding: 30px;
+        font-size: 4em;
+        width: 115px;
+        height: 115px;
+        line-height: 115px;
         color: white;
     }
     
@@ -291,11 +297,12 @@ body{
         
         a{
             color: white;
-            margin: 20px;
+            margin-left:20px;
         }
         
         .inWeb{
             font-size: 3em;
+            margin: 6px;
             width: 70px;
             height: 70px;
             line-height: 70px;

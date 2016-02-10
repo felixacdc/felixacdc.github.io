@@ -51,6 +51,7 @@ $(document).on('ready', function() {
           }
         }
     });
+    
                 
     $("#element").introLoader({
         animation: {
@@ -62,12 +63,9 @@ $(document).on('ready', function() {
                 delayBefore: 1000, //delay time in milliseconds
                 exitTime: 500,
                 onAfter: function() {
-                    $('#homeloader01').addClass('rotateInDownLeft');
-                    $('#homeloader02').addClass('rotateInDownRight');
-                    $('#homeloader03').addClass('zoomInRight');
-                    $('#homeloader04').addClass('fadeInLeft');
-                    $('.homeloader').fadeIn();
                     $('.homeloader').css('display','block');
+                    //Initiat WOW JS
+                    new WOW().init();
                 }                           
             }
         },    
@@ -81,5 +79,6 @@ $(document).on('ready', function() {
             color: '#fff', // #rgb or #rrggbb or array of colors
         }
     });
+    
 
 });
